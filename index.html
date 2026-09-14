@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-store">
+<title>NEBULABS — Ship ideas at light speed</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="nebula" aria-hidden="true"><i></i><i></i><i></i></div>
+<canvas id="bg" aria-hidden="true"></canvas>
+
+<header class="nav">
+  <div class="container nav-in">
+    <a class="logo" href="#top"><span class="dot"></span>NEBULABS</a>
+    <nav class="nav-links">
+      <a href="#features">Features</a>
+      <a href="#console">Console</a>
+      <a href="#pricing">Pricing</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="btn btn-ghost" href="#">Sign in</a>
+      <a class="btn btn-primary" href="#pricing">Launch app →</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="container">
+    <span class="badge"><span class="pulse"></span>V2.0 LIVE — REALTIME SYNC ACROSS 34 REGIONS</span>
+    <h1>Ship ideas at<br><span class="grad">light speed.</span></h1>
+    <p class="lede">Nebulabs bundles edge deploys, realtime data and observability into one console — so your team launches in minutes, not sprints.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary big" href="#pricing">Start free — no card</a>
+      <a class="btn btn-ghost big" href="#console">See the console ↓</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hs"><b class="num" data-target="99.99" data-decimals="2" data-suffix="%">0</b><span>uptime, measured</span></div>
+      <div class="hs"><b class="num" data-target="40" data-suffix="ms">0</b><span>p95 edge latency</span></div>
+      <div class="hs"><b class="num" data-target="12" data-suffix="k">0</b><span>teams onboard</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="features">
+  <div class="container">
+    <div class="eyebrow">Features</div>
+    <h2>Everything between<br><span class="grad">commit and orbit.</span></h2>
+    <div class="feat-grid">
+      <div class="feat glass"><span class="ico">⚡</span><h3>Edge Deploys</h3><p>Push to 34 regions with one command. Rollbacks land in seconds, not tickets.</p></div>
+      <div class="feat glass"><span class="ico">🔄</span><h3>Realtime Sync</h3><p>CRDT-based data that merges itself — even when your users go offline.</p></div>
+      <div class="feat glass"><span class="ico">🛰️</span><h3>Orbit Observability</h3><p>Traces, logs and metrics correlated per deploy. Know before users do.</p></div>
+      <div class="feat glass"><span class="ico">🤖</span><h3>Copilot CI</h3><p>Pipelines that quarantine flaky tests and suggest their own fixes.</p></div>
+      <div class="feat glass"><span class="ico">🔐</span><h3>Vault-grade Security</h3><p>SOC2 Type II, SSO and audit logs on by default — not as an upsell.</p></div>
+      <div class="feat glass"><span class="ico">🧩</span><h3>200+ Integrations</h3><p>Databases, queues, auth providers. Plug in, sync up, move on.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="console">
+  <div class="container split">
+    <div>
+      <div class="eyebrow">Console</div>
+      <h2>One console for<br><span class="grad">your whole galaxy.</span></h2>
+      <ul class="checks">
+        <li>Preview environment for every pull request, auto-torn-down</li>
+        <li>Spend caps per project — surprises stay in space</li>
+        <li>Feature flags baked into the deploy pipeline</li>
+        <li>Instant rollback to any point in the last 90 days</li>
+      </ul>
+    </div>
+    <div class="term glass">
+      <div class="term-bar"><i></i><i></i><i></i><span>nebulabs — zsh</span></div>
+      <pre><code><span class="c">$</span> nebulabs deploy --prod
+<span class="ok">✔</span> build finished in 42s · edge cache warm
+<span class="ok">✔</span> 34 regions synced · p95 40ms
+<span class="ok">✔</span> flags: checkout-v2 → 10% rollout
+<span class="live">●</span> live at https://app.nebulabs.io <span class="cursor"></span></code></pre>
+    </div>
+  </div>
+</section>
+
+<section class="quote">
+  <div class="container">
+    <blockquote>“We deleted three internal tools the week we switched. <span class="it">Nebulabs is the console we kept dreaming about.</span>”</blockquote>
+    <cite><b>Priya N.</b> · VP Engineering, Kiteflight</cite>
+  </div>
+</section>
+
+<section class="block" id="pricing">
+  <div class="container">
+    <div class="eyebrow">Pricing</div>
+    <h2>Pick your <span class="grad">orbit.</span></h2>
+    <div class="plan-grid">
+      <div class="plan glass">
+        <h3>Starter</h3><b>€0</b><span>forever</span>
+        <ul><li>3 projects</li><li>Edge deploys</li><li>Community support</li></ul>
+        <a class="btn btn-ghost" href="#">Start free</a>
+      </div>
+      <div class="plan glass hot">
+        <em class="tag">MOST POPULAR</em>
+        <h3>Pro</h3><b>€29</b><span>per seat / month</span>
+        <ul><li>Unlimited projects</li><li>Copilot CI + SSO</li><li>90-day rollbacks</li></ul>
+        <a class="btn btn-primary" href="#">Launch Pro →</a>
+      </div>
+      <div class="plan glass">
+        <h3>Enterprise</h3><b>Custom</b><span>annual</span>
+        <ul><li>Dedicated regions</li><li>Audit + compliance</li><li>99.99% SLA</li></ul>
+        <a class="btn btn-ghost" href="#">Talk to us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta">
+  <div class="container cta-card glass">
+    <h2>Your galaxy is <span class="grad">waiting.</span></h2>
+    <p>Spin up your first project in under two minutes. No card, no cluster, no drama.</p>
+    <div class="hero-cta center">
+      <a class="btn btn-primary big" href="#">Create free account →</a>
+      <a class="btn btn-ghost big" href="#">Read the docs</a>
+    </div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="container foot-in">
+    <span>© <span id="y">2026</span> Nebulabs Inc. — made among the stars</span>
+    <span class="legal"><a href="#">Status</a><a href="#">Docs</a><a href="#">Security</a><a href="#">Contact</a></span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
